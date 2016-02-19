@@ -1,0 +1,28 @@
+#box {
+    color:lightgray;
+    background-image: url("Hardwood_Flooring.jpg");
+    background-repeat: no-repeat;
+    background-position:center;;
+    text-align: center;
+    font-family: sans-serif;
+ }
+#w, #l {
+    width: 200px;
+    height: 30px;
+    border-radius: 7px;
+    background-color: lightgray;
+    padding: 2px;
+    opacity: .8;
+
+  }
+#w { margin-left:7px;}
+
+#header, #infosqf, #sqft, #cost {
+    font-family: inherit;
+    font-size: 1.2em;
+    }
+#cost {margin-top: -29px;}
+#logo {
+  margin-top: 250px;
+  width: 400px;
+      }
