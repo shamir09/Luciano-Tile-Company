@@ -1,6 +1,6 @@
  $(document).ready(function() {
                             /* Hide the Logo */
-     $("#logo, #sqft, #cost, #infosqf, #header").hide();
+     $("#logo, #sqfOutput, #cost, #infosqf, #header").hide();
 
                             /* Fade in the Logo */
      $("#logo").show(3000);
@@ -16,14 +16,15 @@
                 var sqft = (width * length).toFixed(1);
                 var cost = (sqft * 2.93).toFixed(2);
 
-                $("#sqft").text(sqft || 0);
-                $("#cost").text(cost || 0);
+                $("#sqfOutput").text(sqft + " sqft" || 0);
+                $("#costOutput").text("Cost  :  $ " + cost || 0);
 
-                $("#sqft, #cost, #infosqf").slideDown(1000);
+                $("#sqfOutput, #costOutput, #infosqf").slideDown(1000);
     });
                                                 /* On Focus Select All   */
                 $("#w").on("focus",function() {
-                  $("#sqft, #cost, #infosqf").hide(2000);
+                  $("#sqfOutput").fadeOut(800);
+                  $("#costOutput, #infosqf").hide(2000);
                   $("#w").select();
                    });
 });
