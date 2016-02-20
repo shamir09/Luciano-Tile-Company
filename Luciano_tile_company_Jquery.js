@@ -23,7 +23,7 @@
     });
                                                 /* On Focus Select All   */
                 $("#w").on("focus",function() {
-                  $("#sqfOutput").fadeOut(800);
+                  $("#sqfOutput").fadeOut(1000);
                   $("#costOutput, #infosqf").hide(2000);
                   $("#w").select();
                    });
