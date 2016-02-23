@@ -1,15 +1,16 @@
 .floor_types {
   display: inline;
-  margin-top:50px;
   width: 250px;
+  position: relative;
   }
 
 #box {
     color:gray;
-    background-repeat: no-repeat;
-    background-position:center;;
     text-align: center;
     font-family: sans-serif;
+    display:block;
+    position: relative;
+
  }
 #w, #l {
     display: inline-block;
@@ -20,6 +21,7 @@
     padding: 2px;
     opacity: .8;
     margin-bottom: 10px;
+    position: relative;
 
   }
 #w { margin-left:7px;}
@@ -28,8 +30,7 @@
     font-family: inherit;
     font-size: 1.2em;
     }
-#cost {margin-top: -29px;
-background-color: yellow;}
+
 #logo {
   margin-top: 200px;
   width: 400px;
@@ -53,9 +54,8 @@ div#sqfOutput {
     text-align: center;
   }
   #floorsContainer {
-    bottom:0px;
-    display:block;
-    position:fixed;
-    text-align:center;
+    display: block;
+    text-align: center;
     width: 100%;
+    margin-top:80px;
   }
