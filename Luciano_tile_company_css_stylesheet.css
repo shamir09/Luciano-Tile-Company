@@ -1,6 +1,11 @@
+.floor_types {
+  display: inline;
+  margin-top:50px;
+  width: 250px;
+  }
+
 #box {
-    color:lightgray;
-    background-image: url("Hardwood_Flooring.jpg");
+    color:gray;
     background-repeat: no-repeat;
     background-position:center;;
     text-align: center;
@@ -43,3 +48,14 @@ div#sqfOutput {
     width: 300px;
     display: inline-block;
       }
+  #logoDiv {
+    width:100%;
+    text-align: center;
+  }
+  #floorsContainer {
+    bottom:0px;
+    display:block;
+    position:fixed;
+    text-align:center;
+    width: 100%;
+  }

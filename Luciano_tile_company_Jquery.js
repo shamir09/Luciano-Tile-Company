@@ -1,30 +1,49 @@
  $(document).ready(function() {
+
+   function calculateCost() {
+              var width = $("#w").val();
+              var length = $("#l").val();
+              var sqft = (width * length).toFixed(1);
+              var cost = (sqft * 2.93).toFixed(2);
+
+              $("#sqfOutput").text(sqft + " sqft" || 0);
+              $("#costOutput").text("Cost  :  $ " + cost || 0);
+
+              $("#sqfOutput, #costOutput").slideDown(1000);
+              }
+
+   function clearFields() {
+                $("#sqfOutput, #costOutput").fadeOut(1000);
+                $("#sqfOutput, #costOutput").hide(2000);
+                $("#w").val("");
+                $("#l").val("");
+                $("#w").focus();  /* Focus to Width Bar */
+                $("#w").select();
+                          }
+
+   document.onkeydown = function (evt) {
+       evt = evt || window.event;
+       if (evt.keyCode == 27) {
+           clearFields();
+       }
+       if (evt.keyCode == 13) {
+           calculateCost();
+           }
+   };
                             /* Hide the Logo */
-     $("#logo, #sqfOutput, #cost, #infosqf, #header").hide();
+     $("#logo, #sqfOutput, #cost, #infosqf, #header, #floorsContainer").hide();
 
                             /* Fade in the Logo */
      $("#logo").show(3000);
      $("#header").fadeIn(4750);
-                            /* Focus to Width Bar */
-     $("#w").focus();
-                            /* On leave Calculate the Cost */
+     $("#floorsContainer").fadeIn(10000);
+     $("#w").focus();       /* Focus to Width Bar */
+                                                /* On leave Calculate the Cost */
             $("#l").on("blur",function() {
-
-
-                var width = $("#w").val();
-                var length = $("#l").val();
-                var sqft = (width * length).toFixed(1);
-                var cost = (sqft * 2.93).toFixed(2);
-
-                $("#sqfOutput").text(sqft + " sqft" || 0);
-                $("#costOutput").text("Cost  :  $ " + cost || 0);
-
-                $("#sqfOutput, #costOutput, #infosqf").slideDown(1000);
-    });
+              calculateCost();
+                });
                                                 /* On Focus Select All   */
-                $("#w").on("focus",function() {
-                  $("#sqfOutput").fadeOut(1000);
-                  $("#costOutput, #infosqf").hide(2000);
-                  $("#w").select();
-                   });
+            $("#w").on("focus",function() {
+               clearFields();
+                });
 });
