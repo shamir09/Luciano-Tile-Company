@@ -52,12 +52,13 @@
     width: 200px;
     height: 30px;
     border-radius: 7px;
-    background-color: lightgray;
+    background-color: white;
     padding: 2px;
     opacity: .8;
     margin-bottom: 10px;
     position: relative;
-
+    font-size: 1em;
+    font-family: arial;
   }
 #w { margin-left:7px;}
 
