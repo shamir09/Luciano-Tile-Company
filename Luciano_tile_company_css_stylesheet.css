@@ -1,8 +1,43 @@
-.floor_types {
-  display: inline;
-  width: 250px;
-  position: relative;
-  }
+#floorsContainer {
+     display: inline;
+}
+#hardwood_flooring {
+     background-image: url("hardwood_Flooring.jpg");
+     width:300px;
+     height:300px;
+     display: inline-block;
+ }
+ #laminate_Flooring {
+     background-image: url("laminate_Flooring.jpg");
+     width:300px;
+     height:300px;
+     display: inline-block;;
+ }
+#tile_Flooring  {
+    background-image: url("tile_Flooring.jpg");
+    width:300px;
+    height:300px;
+    display: inline-block;;
+}
+#carpet_Flooring {
+    background-image: url("carpet_Flooring.jpg");
+    width:300px;
+    height:300px;
+    display: inline-block;;
+}
+.pricePerSQF {
+   display: inline;
+   font-family: arial;
+   font-size: 6em;
+   color: white;
+   font-weight: bold;
+   padding-left: 10px;
+   padding-right:10px;
+   opacity: .3;
+   position: relative;
+   top:95px;
+
+ }
 
 #box {
     color:gray;
