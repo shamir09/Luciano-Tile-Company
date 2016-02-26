@@ -1,10 +1,11 @@
  $(document).ready(function() {
-
+              var costPsqf= 2.75;
    function calculateCost() {
               var width = $("#w").val();
               var length = $("#l").val();
+
               var sqft = (width * length).toFixed(2);
-              var cost = (sqft * 2.93).toFixed(2);
+              var cost = (sqft * costPsqf).toFixed(2);
 
               $("#sqfOutput").text(sqft + " sqft" || 0);
               $("#costOutput").text("Cost  :  $ " + cost || 0);
@@ -21,7 +22,7 @@
                 $("#w").select();
                           }
                           /* Hide the Logo */
-              $("#logo, #sqfOutput, #cost, #infosqf, #header, #floorsContainer").hide();
+              $("#logo, #sqfOutput, #costOutput, #infosqf, #header, #floorsContainer").hide();
 
                           /* Fade in the Logo */
               $("#logo").show(3000);
@@ -32,7 +33,24 @@
               $("#l").on("blur",function() {
               calculateCost();
               });
-                        
+$("#carpet_Flooring").click(function(){
+  costPsqf = 2.75;
+  calculateCost();
+});
+
+$("#laminate_Flooring").click(function(){
+  costPsqf = 2.94;
+  calculateCost();
+});
+$("#hardwood_flooring").click(function(){
+  costPsqf = 3.50;
+  calculateCost();
+});
+$("#tile_Flooring").click(function(){
+  costPsqf = 3.64;
+  calculateCost();
+});
+
 
    document.onkeydown = function (evt) {
        evt = evt || window.event;
