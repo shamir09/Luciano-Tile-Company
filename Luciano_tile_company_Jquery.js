@@ -1,16 +1,38 @@
  $(document).ready(function() {
               var costPsqf= 2.75;
+              var sqft = 0;
+
    function calculateCost() {
               var width = $("#w").val();
               var length = $("#l").val();
 
-              var sqft = (width * length).toFixed(2);
-              var cost = (sqft * costPsqf).toFixed(2);
+              sqft = (width * length).toFixed(2);
+              var cost = (sqft * costPsqf).toFixed(0);
+
+                   // CARPET PRICING //
+                    carpetCostPsqf = 2.75;
+                    carpetCostTotal = (carpetCostPsqf * sqft).toFixed(0);
+                    $("#Carpet").text("$" + carpetCostTotal);
+
+                    // LAMINATE PRICING //
+                    laminateCostPsqf = 2.94;
+                     laminateCostTotal = (laminateCostPsqf * sqft).toFixed(0);
+                     $("#Laminate").text("$" + laminateCostTotal);
+
+                   // HARDWOOD PRICING //
+                   hardwoodCostPsqf = 3.50;
+                    hardwoodCostTotal = (hardwoodCostPsqf * sqft).toFixed(0);
+                    $("#Hardwood").text("$" + hardwoodCostTotal);
+
+                    // TILE PRICING //
+                    tileCostPsqf = 3.64;
+                     tileCostTotal = (tileCostPsqf * sqft).toFixed(0);
+                     $("#Tile").text("$" + tileCostTotal);
 
               $("#sqfOutput").text(sqft + " sqft" || 0);
               $("#costOutput").text("Cost  :  $ " + cost || 0);
 
-              $("#sqfOutput, #costOutput").slideDown(1000);
+
               }
 
    function clearFields() {
@@ -34,8 +56,7 @@
               calculateCost();
               });
 $("#carpet_Flooring").click(function(){
-  costPsqf = 2.75;
-  calculateCost();
+
 });
 
 $("#laminate_Flooring").click(function(){

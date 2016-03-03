@@ -28,7 +28,7 @@
 .pricePerSQF {
    display: inline;
    font-family: arial;
-   font-size: 6em;
+   font-size: 5em;
    color: white;
    font-weight: bold;
    padding-left: 10px;
@@ -76,7 +76,7 @@
 div#costOutput {
     font-family: fantasy;;
     color: darkgray;
-    font-size: 40px;
+    font-size: 20px;
     border-color: lightgray;
     border: .8px;
     border-style: solid;
