@@ -52,7 +52,7 @@
               $("#floorsContainer").fadeIn(3000);
               $("#w").focus();       /* Focus to Width Bar */
                                               /* On leave Calculate the Cost */
-              $("#l").on("blur",function() {
+              $("#l").keyup(function() {
               calculateCost();
               });
 $("#carpet_Flooring").click(function(){

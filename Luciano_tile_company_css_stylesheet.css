@@ -3,32 +3,32 @@
 }
 #hardwood_flooring {
      background-image: url("hardwood_Flooring.jpg");
-     width:300px;
-     height:300px;
+     width:260px;
+     height:260px;
      display: inline-block;
  }
  #laminate_Flooring {
      background-image: url("laminate_Flooring.jpg");
-     width:300px;
-     height:300px;
+     width:260px;
+     height:260px;
      display: inline-block;;
  }
 #tile_Flooring  {
     background-image: url("tile_Flooring.jpg");
-    width:300px;
-    height:300px;
+    width:260px;
+    height:260px;
     display: inline-block;;
 }
 #carpet_Flooring {
     background-image: url("carpet_Flooring.jpg");
-    width:300px;
-    height:300px;
+    width:260px;
+    height:260px;
     display: inline-block;;
 }
 .pricePerSQF {
    display: inline;
    font-family: arial;
-   font-size: 5em;
+   font-size: 4em;
    color: white;
    font-weight: bold;
    padding-left: 10px;
