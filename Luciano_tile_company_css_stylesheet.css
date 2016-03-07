@@ -2,25 +2,25 @@
      display: inline;
 }
 #hardwood_flooring {
-     background-image: url("hardwood_Flooring.jpg");
+     background-image: url("assets/hardwood_Flooring.jpg");
      width:260px;
      height:260px;
      display: inline-block;
  }
  #laminate_Flooring {
-     background-image: url("laminate_Flooring.jpg");
+     background-image: url("assets/laminate_Flooring.jpg");
      width:260px;
      height:260px;
      display: inline-block;;
  }
 #tile_Flooring  {
-    background-image: url("tile_Flooring.jpg");
+    background-image: url("assets/tile_Flooring.jpg");
     width:260px;
     height:260px;
     display: inline-block;;
 }
 #carpet_Flooring {
-    background-image: url("carpet_Flooring.jpg");
+    background-image: url("assets/carpet_Flooring.jpg");
     width:260px;
     height:260px;
     display: inline-block;;
