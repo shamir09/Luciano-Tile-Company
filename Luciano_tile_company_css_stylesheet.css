@@ -68,7 +68,7 @@
     }
 
 #logo {
-  margin-top: 200px;
+  margin-top: 150px;
   width: 400px;
 
   }
@@ -76,11 +76,11 @@
 div#costOutput {
     font-family: fantasy;;
     color: darkgray;
-    font-size: 20px;
+    font-size: 30px;
     border-color: lightgray;
     border: .8px;
     border-style: solid;
-    padding: 35px;
+    padding: 25px;
     border-radius: 4px;
     width: 300px;
     display: inline-block;
@@ -93,5 +93,5 @@ div#costOutput {
     display: block;
     text-align: center;
     width: 100%;
-    margin-top:80px;
+    margin-top:20px;
   }
