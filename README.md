@@ -5,16 +5,20 @@ Calculate the cost of new flooring, with Luciano's Tile Company WebApp
 
 #### READ ME FILE  |  Luciano's Flooring pricing </style>
 
-##### This webpage was created to help the pricing for flooring for a company Luciano's Flooring for different types of floors. 
+##### Welcome to Luciano's Tile Company webpage created to help pricing for different types of floors. 
 
 ##### INPUT - the program uses two variables to calculate pricing.
 		 *Width    (format accepted: feet ')
 		 *Height   (format accepted: feet ')
-			 Under Development:
+			 Future Development:
 				 Options for Carpet, Hardwood Flooring, Vinyl, Tiles, or Polished concrete.
+				 Add to Shopping Cart
+				 Show Square Footage
+				 Lead Time (ex.2 weeks)
+				 Availability
 
 
-### CONTACT ME    |     DEVELOPERS
+### CONTACT ME    |     DEVELOPER
 
 ###### SHAMIR AJATE     shamirajate@gmail.com @shamir09
 
