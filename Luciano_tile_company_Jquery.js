@@ -13,6 +13,7 @@
               $("#sqfOutput, #costOutput").slideDown(1000);
               }
 
+
    function clearFields() {
                 $("#sqfOutput, #costOutput").fadeOut(1000);
                 $("#sqfOutput, #costOutput").hide(2000);
@@ -35,6 +36,7 @@
               });
 $("#carpet_Flooring").click(function(){
   costPsqf = 2.75;
+  $("#carpet_Flooring").width+=30;
   calculateCost();
 });
 

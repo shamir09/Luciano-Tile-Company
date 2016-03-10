@@ -3,39 +3,42 @@
 }
 #hardwood_flooring {
      background-image: url("assets/hardwood_Flooring.jpg");
-     width:260px;
-     height:260px;
-     display: inline-block;
  }
- #laminate_Flooring {
+#laminate_Flooring {
      background-image: url("assets/laminate_Flooring.jpg");
-     width:260px;
-     height:260px;
-     display: inline-block;;
  }
 #tile_Flooring  {
     background-image: url("assets/tile_Flooring.jpg");
-    width:260px;
-    height:260px;
-    display: inline-block;;
 }
 #carpet_Flooring {
     background-image: url("assets/carpet_Flooring.jpg");
+}
+#hardwood_flooring, #carpet_Flooring, #tile_Flooring,  #laminate_Flooring{
     width:260px;
     height:260px;
-    display: inline-block;;
+    opacity:.4;
+    display: inline-block;
+    animation-name: out;
+    transition-duration: 1s;
+}
+#hardwood_flooring:hover, #carpet_Flooring:hover, #tile_Flooring:hover,  #laminate_Flooring:hover{
+    opacity:1;
+    height:340px;
+    transition-property: all;
+    transition-duration: 1s;
+    #carpet_Flooring {height:260px;}
 }
 .pricePerSQF {
    display: inline;
    font-family: arial;
-   font-size: 4em;
+   font-size: 6em;
    color: white;
    font-weight: bold;
    padding-left: 10px;
    padding-right:10px;
    opacity: .3;
    position: relative;
-   top:95px;
+   top:60px;
 
  }
 
@@ -68,9 +71,8 @@
     }
 
 #logo {
-  margin-top: 150px;
+  margin-top: 100px;
   width: 400px;
-
   }
 
 div#costOutput {
