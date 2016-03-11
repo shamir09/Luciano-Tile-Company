@@ -2,6 +2,16 @@
 <html>
 <head>
       <meta name="viewport" content="width=device-width, initial-scale=.8">
+
+      <!--<link rel="stylesheet" type="text/css" href="mytheme.css">-->
+      <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+      <!-- Latest compiled and minified CSS -->
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+      <!-- Optional theme -->
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css" integrity="sha384-fLW2N01lMqjakBkx3l/M9EahuwpSfeNvV63J5ezn3uZzapT0u7EYsXMjQV+0En5r" crossorigin="anonymous">
+      <!-- Latest compiled and minified JavaScript -->
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+
   <link rel="stylesheet" href="Luciano_tile_company_css_stylesheet.css">
    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
    <script type="text/javascript" src="Luciano_tile_company_Jquery.js"></script>
@@ -9,29 +19,33 @@
     <title> Welcome to Luciano Flooring </title></head>
 
 <body>
+  <div>
+        <div class="col-lg-6">
+         <div id="logoDiv"><img src="assets/Luciano_Flooring.png" id="logo"></div>
+            <div id="box">
 
-   <div id="logoDiv"><img src="assets/Luciano_Flooring.png" id="logo"></div>
-   <div id="box">
+                <form action="#" id="mainform">
+                    <p id="header"> Please enter the amount of feet to calculate the cost of your new Flooring.</p>
+                    Width <input type="number" id="w" maxlength="5" placeholder="0"></input><br/>
+                    Length <input type="number" id="l" maxlength="5" placeholder="0" ></input>
+                </form>
+             </div>
+        </div>
 
-      <form action="#" id="mainform">
-          <p id="header"> Please enter the amount of feet to calculate the cost of your new Flooring.</p>
-          Width <input type="number" id="w" maxlength="5" placeholder="0"></input><br/>
-          Length <input type="number" id="l" maxlength="5" placeholder="0" ></input>
-      </form>
-
-          <div id="floatingbox" >
+        <div id="floatingbox" class="col-lg-6" >
             <div id="costOutput"> <!-- Cost of square feet output --></div>
             <div id="sqfOutput"> <!-- Amount of square feet output --> </div>
-          </div>
+        </div>
+</br>
 
-      <div id="floorsContainer">
-            <div id="carpet_Flooring"> <p class="pricePerSQF" id="Carpet"> $2.75 </p></div>
-            <div id="laminate_Flooring"> <p class="pricePerSQF" id="Laminate"> $2.94 </p></div>
-            <div id="hardwood_flooring"> <p class="pricePerSQF" id="Hardwood"> $3.50  </p></div>
-            <div id="tile_Flooring"> <p class="pricePerSQF" id="Tile"> $3.64 </p></div>
-
+      <div id="floorsContainer" class="col-lg-12">
+            <div id="carpet_Flooring"> <p class="pricePerSQF" id="Carpet"> $2.75 </p><span class="glyphicon glyphicon-ok"></span></div>
+            <div id="laminate_Flooring"> <p class="pricePerSQF" id="Laminate"> $2.94 </p> <span class="glyphicon glyphicon-ok"></span></div>
+            <div id="hardwood_flooring"> <p class="pricePerSQF" id="Hardwood"> $3.50  </p> <span class="glyphicon glyphicon-ok"></span></div>
+            <div id="tile_Flooring"> <p class="pricePerSQF" id="Tile"> $3.64 </p> <span class="glyphicon glyphicon-ok"></span></div>
       </div>
-</div>
 
+
+</div>
 </body>
 </html>

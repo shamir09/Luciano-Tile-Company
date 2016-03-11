@@ -1,5 +1,16 @@
+a link {
+  text-decoration: none;
+}
+
 #floorsContainer {
      display: inline;
+}
+div {
+  background-repeat: no-repeat;
+}
+#floatingbox {
+  text-align:center;
+  padding: 50px;
 }
 #hardwood_flooring {
      background-image: url("assets/hardwood_Flooring.jpg");
@@ -30,8 +41,8 @@
 }
 .pricePerSQF {
    display: inline;
-   font-family: arial;
-   font-size: 6em;
+   font-family: arial, helvetica, monospace;
+   font-size: 5em;
    color: white;
    font-weight: bold;
    padding-left: 10px;
@@ -74,17 +85,25 @@
   margin-top: 100px;
   width: 400px;
   }
+span {
+  margin-left: auto;
+  margin-right:auto;
+  color: white;
+  font-size: 100px;
+  margin-top:60px;
+  opacity: .4;
+}
 
 div#costOutput {
     font-family: fantasy;;
     color: darkgray;
-    font-size: 30px;
+    font-size: 20px;
     border-color: lightgray;
     border: .8px;
     border-style: solid;
-    padding: 25px;
+    padding: 15px;
     border-radius: 4px;
-    width: 300px;
+    width: 200px;
     display: inline-block;
       }
   #logoDiv {
@@ -93,7 +112,7 @@ div#costOutput {
   }
   #floorsContainer {
     display: block;
+    padding:50px;
     text-align: center;
     width: 100%;
-    margin-top:20px;
-  }
+      }
