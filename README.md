@@ -16,6 +16,7 @@ Calculate the cost of new flooring, with Luciano's Flooring Company WebApp
 				 -Show Square Footage
 				 -Lead Time (ex.2 weeks)
 				 -Availability
+                                 -Remove from Cart
 
 
 ### CONTACT ME    |     DEVELOPER
