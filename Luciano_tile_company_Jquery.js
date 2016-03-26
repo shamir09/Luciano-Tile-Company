@@ -35,10 +35,10 @@
               calculateCost();
               });
 $("#carpet_Flooring").click(function(){
+  $("#carpet_Flooring").addClass("activeclass");
   costPsqf = 2.75;
-  $("#carpet_Flooring").width+=30;
   calculateCost();
-});
+  });
 
 $("#laminate_Flooring").click(function(){
   costPsqf = 2.94;

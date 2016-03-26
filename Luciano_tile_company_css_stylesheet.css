@@ -8,22 +8,38 @@ a link {
 div {
   background-repeat: no-repeat;
 }
+
+div#costOutput {
+    font-family: fantasy;;
+    color: darkgray;
+    font-size: 20px;
+    border-color: lightgray;
+    border: .8px;
+    border-style: solid;
+    padding: 15px;
+    border-radius: 4px;
+    width: 200px;
+    display: inline;
+      }
+span {
+    margin-left: auto;
+    margin-right:auto;
+    color: white;
+    font-size: 100px;
+    margin-top:60px;
+    opacity: .1;
+      }
+span:hover {
+  opacity:.8;
+  color:green;
+  transition-property: all;
+  transition-duration: .5s;
+  }
 #floatingbox {
+  display:block;
+  margin-top:30px;
   text-align:center;
-  padding: 50px;
-}
-#hardwood_flooring {
-     background-image: url("assets/hardwood_Flooring.jpg");
- }
-#laminate_Flooring {
-     background-image: url("assets/laminate_Flooring.jpg");
- }
-#tile_Flooring  {
-    background-image: url("assets/tile_Flooring.jpg");
-}
-#carpet_Flooring {
-    background-image: url("assets/carpet_Flooring.jpg");
-}
+  }
 #hardwood_flooring, #carpet_Flooring, #tile_Flooring,  #laminate_Flooring{
     width:260px;
     height:260px;
@@ -37,7 +53,25 @@ div {
     height:340px;
     transition-property: all;
     transition-duration: 1s;
-    #carpet_Flooring {height:260px;}
+
+}
+#carpet_Flooring {
+    background-image: url("assets/carpet_Flooring.jpg");
+    }
+#hardwood_flooring {
+     background-image: url("assets/hardwood_Flooring.jpg");
+ }
+#laminate_Flooring {
+     background-image: url("assets/laminate_Flooring.jpg");
+ }
+#tile_Flooring  {
+    background-image: url("assets/tile_Flooring.jpg");
+}
+.activeclass{
+    opacity:3;
+    height:340px;
+    transition-property: all;
+    transition-duration: 1s;
 }
 .pricePerSQF {
    display: inline;
@@ -50,7 +84,6 @@ div {
    opacity: .3;
    position: relative;
    top:60px;
-
  }
 
 #box {
@@ -85,27 +118,7 @@ div {
   margin-top: 100px;
   width: 400px;
   }
-span {
-  margin-left: auto;
-  margin-right:auto;
-  color: white;
-  font-size: 100px;
-  margin-top:60px;
-  opacity: .4;
-}
 
-div#costOutput {
-    font-family: fantasy;;
-    color: darkgray;
-    font-size: 20px;
-    border-color: lightgray;
-    border: .8px;
-    border-style: solid;
-    padding: 15px;
-    border-radius: 4px;
-    width: 200px;
-    display: inline-block;
-      }
   #logoDiv {
     width:100%;
     text-align: center;
