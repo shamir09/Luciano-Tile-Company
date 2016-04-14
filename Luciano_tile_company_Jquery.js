@@ -23,10 +23,9 @@
                 $("#w").select();
                           }
                           /* Hide the Logo */
-              $("#logo, #sqfOutput, #costOutput, #infosqf, #header, #floorsContainer").hide();
+              $("#sqfOutput, #costOutput, #infosqf, #header, #floorsContainer").hide();
 
                           /* Fade in the Logo */
-              $("#logo").show(3000);
               $("#header").fadeIn(2000);
               $("#floorsContainer").fadeIn(3000);
               $("#w").focus();       /* Focus to Width Bar */
@@ -35,7 +34,6 @@
               calculateCost();
               });
 $("#carpet_Flooring").click(function(){
-  $("#carpet_Flooring").addClass("activeclass");
   costPsqf = 2.75;
   calculateCost();
   });
