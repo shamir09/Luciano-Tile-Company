@@ -35,19 +35,23 @@
               });
 $("#carpet_Flooring").click(function(){
   costPsqf = 2.75;
+  $("#flooringType").text("Carpet");
   calculateCost();
   });
 
 $("#laminate_Flooring").click(function(){
   costPsqf = 2.94;
+  $("#flooringType").text("Laminate");
   calculateCost();
 });
 $("#hardwood_flooring").click(function(){
   costPsqf = 3.50;
+  $("#flooringType").text("Hardwood");
   calculateCost();
 });
 $("#tile_Flooring").click(function(){
   costPsqf = 3.64;
+  $("#flooringType").text("Tile");
   calculateCost();
 });
 
