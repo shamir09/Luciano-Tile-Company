@@ -25,5 +25,3 @@ Calculate the cost of new flooring, with Luciano's Flooring Company WebApp
 ###### SHAMIR AJATE     shamirajate@gmail.com @shamir09
 
 ### See it run live:         [Luciano's Flooring Company](http://www.shamirajate.com/lucianoFlooring/index.html)
-
-Legal. A person can distribute contant freeky must deter!come
