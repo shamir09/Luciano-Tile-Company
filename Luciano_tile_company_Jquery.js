@@ -10,13 +10,13 @@
               $("#sqfOutput").text(sqft + " sqft" || 0);
               $("#costOutput").text("Cost  :  $ " + cost || 0);
 
-              $("#sqfOutput, #costOutput").slideDown(1000);
+              $("#sqfOutput, #costOutput").slideDown(800);
               }
 
 
    function clearFields() {
                 $("#sqfOutput, #costOutput").fadeOut(1000);
-                $("#sqfOutput, #costOutput").hide(2000);
+                $("#sqfOutput, #costOutput").hide(1000);
                 $("#w").val("");
                 $("#l").val("");
                 $("#w").focus();  /* Focus to Width Bar */

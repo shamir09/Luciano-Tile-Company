@@ -1,10 +1,6 @@
 a link {
   text-decoration: none;
 }
-
-#floorsContainer {
-     display: inline;
-}
 div {
   background-repeat: no-repeat;
 }
@@ -35,11 +31,6 @@ span:hover, .checkMarkGreen {
   transition-property: all;
   transition-duration: .5s;
   }
-#floatingbox {
-  display:block;
-  margin-top:30px;
-  text-align:center;
-  }
 .floorType {
     width:85px;
     height:85px;
@@ -58,6 +49,14 @@ span:hover, .checkMarkGreen {
     transition-duration: 1s;
 }
 
+#floorsContainer {
+     display: inline;
+}
+#floatingbox {
+  display:block;
+  margin-top:30px;
+  text-align:center;
+  }
 #carpet_Flooring {
     background-image: url("assets/carpet_Flooring.jpg");
     }
