@@ -7,7 +7,7 @@ div {
 
 div#costOutput {
     font-family: fantasy;;
-    color: darkgray;
+    color:#EBE9E9;
     font-size: 20px;
     border-color: lightgray;
     border: .8px;
@@ -50,10 +50,9 @@ span:hover, .checkMarkGreen {
 }
 #main_container {
   display:block;
-  height: 970px;
-  width:1080px;
-  background-repeat: no-repeat;;
-  background-position: center;
+  height: 1000px;
+  width:100%;
+  background-size: cover;
   transition: 1s;
 }
 #form_container {
@@ -64,12 +63,13 @@ span:hover, .checkMarkGreen {
 }
 #floorsContainer {
      display: inline;
-     float: right;
 }
 #floatingbox {
-  display:block;
-  margin-top:30px;
+  display:inline-block;
+  width: 220px;
   text-align:center;
+  float: right;
+  padding-top: 200px;
   }
 
   /* FLOORING TYPES - CIRCULAR */
@@ -154,3 +154,4 @@ span:hover, .checkMarkGreen {
     text-align: center;
     width: 100%;
       }
+  #flooringType, #sqfOutput {color:white;}
