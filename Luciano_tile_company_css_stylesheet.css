@@ -48,20 +48,30 @@ span:hover, .checkMarkGreen {
     transition-property: all;
     transition-duration: 1s;
 }
-
+#main_container {
+  display:block;
+  height: 970px;
+  width:1080px;
+  background-repeat: no-repeat;;
+  background-position: center;
+  transition: 1s;
+}
+#form_container {
+    width: 80%;
+    height:600px;
+    border-radius: 20px;
+    padding: 20px;
+}
 #floorsContainer {
      display: inline;
+     float: right;
 }
 #floatingbox {
   display:block;
   margin-top:30px;
   text-align:center;
   }
-  #main_container {
-    display:block;
-    height: 900px;
-    transition: 1s;
-  }
+
   /* FLOORING TYPES - CIRCULAR */
 #carpet_Flooring {
     background-image: url("assets/carpet_Flooring.jpg");

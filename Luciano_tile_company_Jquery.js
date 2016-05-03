@@ -66,8 +66,8 @@ $("#laminate_Flooring").click(function(){
   $('#Carpet, #Hardwood, #Tile').hide(1000);    /////// HIDE SPAN PRICING SQF
 
     //////////////// ADD AND REMOVE WALLPAPER WHEN FLOOR TYPE CLICKED ///////////////////
-  $('#main_container').addClass('hardwood_Flooring_wall');
-  $('#main_container').removeClass('carpet_Flooring_wall hardwood_Flooring_wall laminate_Flooring_wall tile_Flooring_wall');
+  $('#main_container').addClass('laminate_Flooring_wall');
+  $('#main_container').removeClass('carpet_Flooring_wall hardwood_Flooring_wall tile_Flooring_wall');
   calculateCost();
 });
 
@@ -85,8 +85,8 @@ $("#hardwood_flooring").click(function(){
   $('#Carpet, #Laminate, #Tile').hide(1000);    /////// HIDE SPAN PRICING SQF
 
     //////////////// ADD AND REMOVE WALLPAPER WHEN FLOOR TYPE CLICKED ///////////////////
-  $('#main_container').addClass('laminate_Flooring_wall');
-  $('#main_container').removeClass('carpet_Flooring_wall hardwood_Flooring_wall laminate_Flooring_wall');
+  $('#main_container').addClass('hardwood_Flooring_wall');
+  $('#main_container').removeClass('carpet_Flooring_wall tile_Flooring_wall laminate_Flooring_wall');
   calculateCost();
 });
 
@@ -105,7 +105,7 @@ $("#tile_Flooring").click(function(){
 
   //////////////// ADD AND REMOVE WALLPAPER WHEN FLOOR TYPE CLICKED ///////////////////
   $('#main_container').addClass('tile_Flooring_wall');
-  $('#main_container').removeClass('carpet_Flooring_wall carpet_Flooring_wall hardwood_Flooring_wall laminate_Flooring_wall');
+  $('#main_container').removeClass('carpet_Flooring_wall hardwood_Flooring_wall laminate_Flooring_wall');
   calculateCost();
 });
 
