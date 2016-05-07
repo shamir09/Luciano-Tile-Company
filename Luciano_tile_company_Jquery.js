@@ -1,5 +1,7 @@
  $(document).ready(function() {
               var costPsqf= 2.75;
+              $("#carpet_Flooring").click();
+              
    function calculateCost() {
               var width = $("#w").val();
               var length = $("#l").val();

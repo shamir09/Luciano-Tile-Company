@@ -28,6 +28,7 @@ span {
 span:hover, .checkMarkGreen {
   opacity:.8;
   color:green;
+  margin-top:10px;
   transition-property: all;
   transition-duration: .5s;
   }
@@ -43,33 +44,35 @@ span:hover, .checkMarkGreen {
 .activeFLR {
     opacity:1;
     width:200px;
-    height:250px;
+    height:220px;
     border-radius: 40px;
     transition-property: all;
     transition-duration: 1s;
 }
 #main_container {
   display:block;
-  height: 1000px;
+  height: 980px;
   width:100%;
   background-size: cover;
   transition: 1s;
 }
 #form_container {
-    width: 80%;
-    height:600px;
+    width: 100%;
     border-radius: 20px;
     padding: 20px;
+    display: block;
 }
 #floorsContainer {
-     display: inline;
+     display: block;
+
 }
 #floatingbox {
-  display:inline-block;
+  display:block;
   width: 220px;
+  margin-left:auto;
+  margin-right:auto;
   text-align:center;
-  float: right;
-  padding-top: 200px;
+  padding-top: 30px;
   }
 
   /* FLOORING TYPES - CIRCULAR */
@@ -87,7 +90,7 @@ span:hover, .checkMarkGreen {
 }
   /* FLOORING TYPES - WALLPAPERS */
 .carpet_Flooring_wall  {
-      background-image: url("assets/carpet_Flooring_wall.jpg");
+      background-image: url("assets/carpet_Flooring_wall2.jpg");
   }
 .hardwood_Flooring_wall  {
       background-image: url("assets/hardwood_Flooring_wall.jpg");
@@ -99,7 +102,7 @@ span:hover, .checkMarkGreen {
       background-image: url("assets/tile_Flooring_wall.jpg");
   }
 
-.pricePerSQF {
+.pricePerSQF{
    display: inline;
    font-family: arial, helvetica, monospace;
    font-size: 5em;
@@ -138,6 +141,7 @@ span:hover, .checkMarkGreen {
     font-family: inherit;
     font-size: 1.2em;
     }
+#header, p { color:white;}
 
 #logo {
   margin-top: 100px;
@@ -150,8 +154,56 @@ span:hover, .checkMarkGreen {
   }
   #floorsContainer {
     display: block;
-    padding:50px;
+    padding:5px;
     text-align: center;
     width: 100%;
       }
   #flooringType, #sqfOutput {color:white;}
+
+
+  @media only screen and (max-width: 400px) {
+      body {
+          background-color: lightblue;
+      }
+      .activeFLR {
+          opacity:1;
+          display:inline-block;
+          width:150px;
+          height:150px;
+          border-radius: 40px;
+          transition-property: all;
+          transition-duration: .5s;
+      }
+      .floorType {
+          width:55px;
+          height:55px;
+          opacity:.7;
+          display: inline-block;
+          animation-name: out;
+          transition-duration: 1s;
+          border-radius: 180px;
+      }
+      .floorsContainer {
+          padding:0px;
+      }
+      .pricePerSQF{
+         display: inline;
+         font-family: arial, helvetica, monospace;
+         font-size: 2em;
+         color: white;
+         font-weight: bold;
+         padding-left: 10px;
+         padding-right:10px;
+         opacity: .3;
+         position: relative;
+         top:60px;
+       }
+      #calculate_btn, #reset_btn{
+          width: 80%;
+          height:60px;
+          display:block;
+          margin-top: 7px;
+          margin-left: auto;
+          margin-right: auto;
+        }
+  }
