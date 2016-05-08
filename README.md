@@ -1,11 +1,11 @@
 # Luciano-Tile-Company
 Calculate the cost of new flooring, with Luciano's Flooring Company WebApp
 
-<div style="display: block; text-align="center";> <img src="http://shamirajate.com/lucianoFlooring/Luciano_Flooring.png" width="300" height="140"></div>
+<div style="display: block; text-align="center";> <img src="http://shamirajate.com/lucianoFlooring/Luciano_Flooring.png" width="350" height="150"></div>
 
 #### READ ME FILE  |  Luciano's Flooring pricing </style>
 
-##### Welcome to Luciano's Flooring Company WebApp created to help price different types of floors. Each flooring type has a different price per square foot, insert the Width & Length and click the Floor type to get pricing. 
+##### Welcome to Luciano's Flooring Company WebApp created to help price different types of floors. Each flooring type has a different price per square foot, insert the Width & Length and click the Floor type to get pricing.
 
 ##### INPUT - the program uses three variables to calculate pricing.
 		 *Width    (format accepted: feet ')
