@@ -72,6 +72,7 @@ span:hover, .checkMarkGreen {
   margin-left:auto;
   margin-right:auto;
   text-align:center;
+  margin-top: 30px;
   padding-top: 30px;
   }
 
@@ -90,7 +91,7 @@ span:hover, .checkMarkGreen {
 }
   /* FLOORING TYPES - WALLPAPERS */
 .carpet_Flooring_wall  {
-      background-image: url("assets/carpet_Flooring_wall2.jpg");
+      background-image: url("assets/carpet_Flooring_wall.jpg");
   }
 .hardwood_Flooring_wall  {
       background-image: url("assets/hardwood_Flooring_wall.jpg");
@@ -199,7 +200,7 @@ span:hover, .checkMarkGreen {
          top:60px;
        }
       #calculate_btn, #reset_btn{
-          width: 80%;
+          width: 60px;;
           height:60px;
           display:block;
           margin-top: 7px;

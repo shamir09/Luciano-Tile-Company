@@ -1,7 +1,7 @@
  $(document).ready(function() {
               var costPsqf= 2.75;
-              $("#carpet_Flooring").click();
-              
+
+
    function calculateCost() {
               var width = $("#w").val();
               var length = $("#l").val();
@@ -17,8 +17,8 @@
 
 
    function clearFields() {
-                $("#sqfOutput, #costOutput").fadeOut(1000);
-                $("#sqfOutput, #costOutput").hide(1000);
+                $("#sqfOutput, #costOutput").fadeOut(800);
+                $("#sqfOutput, #costOutput").hide(800);
                 $("#w").val("");
                 $("#l").val("");
                 $("#w").focus();  /* Focus to Width Bar */
@@ -26,11 +26,11 @@
                           }
                           /* Hide the Logo */
               $("#sqfOutput, #costOutput, #infosqf, #header, #floorsContainer").hide();
-              $('#Carpet, #Laminate, #Hardwood, #Tile').hide(1000);    /////// HIDE SPAN PRICING SQF
+              $('#Carpet, #Laminate, #Hardwood, #Tile').hide(700);    /////// HIDE SPAN PRICING SQF
 
                           /* Fade in the Logo */
-              $("#header").fadeIn(2000);
-              $("#floorsContainer").fadeIn(3000);
+              $("#header").fadeIn(800);
+              $("#floorsContainer").fadeIn(800);
               $("#w").focus();       /* Focus to Width Bar */
                                               /* On leave Calculate the Cost */
               $("#l").on("blur",function() {
@@ -45,8 +45,8 @@ $("#carpet_Flooring").click(function(){
   $('#check_1').addClass('checkMarkGreen');      ///////// GREEN CHECKMARK
   $('#check_2, #check_3, #check_4').removeClass('checkMarkGreen');
 
-  $('#Carpet').show(1000);          /////// SHOW SPAN PRICING SQF
-  $('#Laminate, #Hardwood, #Tile').hide(1000);    /////// HIDE SPAN PRICING SQF
+  $('#Carpet').show(800);          /////// SHOW SPAN PRICING SQF
+  $('#Laminate, #Hardwood, #Tile').hide(800);    /////// HIDE SPAN PRICING SQF
 
   //////////////// ADD AND REMOVE WALLPAPER WHEN FLOOR TYPE CLICKED ///////////////////
   $('#main_container').addClass('carpet_Flooring_wall');
@@ -64,8 +64,8 @@ $("#laminate_Flooring").click(function(){
   $('#check_2').addClass('checkMarkGreen'); ///////// GREEN CHECKMARK
   $('#check_1, #check_3, #check_4').removeClass('checkMarkGreen');
 
-  $('#Laminate').show(1000);          /////// SHOW SPAN PRICING SQF
-  $('#Carpet, #Hardwood, #Tile').hide(1000);    /////// HIDE SPAN PRICING SQF
+  $('#Laminate').show(800);          /////// SHOW SPAN PRICING SQF
+  $('#Carpet, #Hardwood, #Tile').hide(800);    /////// HIDE SPAN PRICING SQF
 
     //////////////// ADD AND REMOVE WALLPAPER WHEN FLOOR TYPE CLICKED ///////////////////
   $('#main_container').addClass('laminate_Flooring_wall');
@@ -83,8 +83,8 @@ $("#hardwood_flooring").click(function(){
   $('#check_3').addClass('checkMarkGreen'); ///////// GREEN CHECKMARK
   $('#check_1, #check_2, #check_4').removeClass('checkMarkGreen');
 
-  $('#Hardwood').show(1000);          /////// SHOW SPAN PRICING SQF
-  $('#Carpet, #Laminate, #Tile').hide(1000);    /////// HIDE SPAN PRICING SQF
+  $('#Hardwood').show(800);          /////// SHOW SPAN PRICING SQF
+  $('#Carpet, #Laminate, #Tile').hide(800);    /////// HIDE SPAN PRICING SQF
 
     //////////////// ADD AND REMOVE WALLPAPER WHEN FLOOR TYPE CLICKED ///////////////////
   $('#main_container').addClass('hardwood_Flooring_wall');
@@ -102,8 +102,8 @@ $("#tile_Flooring").click(function(){
   $('#check_4').addClass('checkMarkGreen'); ///////// GREEN CHECKMARK
   $('#check_1, #check_2, #check_3').removeClass('checkMarkGreen');
 
-  $('#Tile').show(1000);          /////// SHOW SPAN PRICING SQF
-  $('#Carpet, #Laminate, #Hardwood').hide(1000);    /////// HIDE SPAN PRICING SQF
+  $('#Tile').show(800);          /////// SHOW SPAN PRICING SQF
+  $('#Carpet, #Laminate, #Hardwood').hide(800);    /////// HIDE SPAN PRICING SQF
 
   //////////////// ADD AND REMOVE WALLPAPER WHEN FLOOR TYPE CLICKED ///////////////////
   $('#main_container').addClass('tile_Flooring_wall');
