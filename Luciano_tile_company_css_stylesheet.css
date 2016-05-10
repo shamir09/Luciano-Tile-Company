@@ -29,6 +29,7 @@ span:hover, .checkMarkGreen {
   opacity:.8;
   color:green;
   margin-top:10px;
+  font-size:
   transition-property: all;
   transition-duration: .5s;
   }
@@ -165,6 +166,9 @@ span:hover, .checkMarkGreen {
   @media only screen and (max-width: 400px) {
       body {
           background-color: lightblue;
+      }
+      #check_1, #check_2, #check_3, #check_4 {
+        font-size:3em;
       }
       .activeFLR {
           opacity:1;
