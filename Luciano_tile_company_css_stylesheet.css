@@ -29,15 +29,14 @@ span:hover, .checkMarkGreen {
   opacity:.8;
   color:green;
   margin-top:10px;
-  font-size:
   transition-property: all;
   transition-duration: .5s;
   }
 .floorType {
+    display: -webkit-inline-box;
     width:85px;
     height:85px;
     opacity:.7;
-    display: inline-block;
     animation-name: out;
     transition-duration: 1s;
     border-radius: 180px;
@@ -73,8 +72,8 @@ span:hover, .checkMarkGreen {
   margin-left:auto;
   margin-right:auto;
   text-align:center;
-  margin-top: 30px;
-  padding-top: 30px;
+  margin-top: 20px;
+  padding-top: 20px;
   }
 
   /* FLOORING TYPES - CIRCULAR */
@@ -91,7 +90,7 @@ span:hover, .checkMarkGreen {
     background-image: url("assets/tile_Flooring.jpg");
 }
   /* FLOORING TYPES - WALLPAPERS */
-.carpet_Flooring_wall  {
+._wall  {
       background-image: url("assets/carpet_Flooring_wall.jpg");
   }
 .hardwood_Flooring_wall  {
@@ -160,33 +159,33 @@ span:hover, .checkMarkGreen {
     text-align: center;
     width: 100%;
       }
-  #flooringType, #sqfOutput {color:white;}
+  #flooringTypeLabel, #sqfOutput {color:white;}
 
 
-  @media only screen and (max-width: 400px) {
+  @media only screen and (max-width: 500px) {
       body {
-          background-color: lightblue;
+          background-color: ;
       }
       #check_1, #check_2, #check_3, #check_4 {
         font-size:3em;
-      }
+              }
       .activeFLR {
           opacity:1;
           display:inline-block;
-          width:150px;
-          height:150px;
+          width:120px;
+          height:120px;
           border-radius: 40px;
           transition-property: all;
           transition-duration: .5s;
       }
       .floorType {
-          width:55px;
-          height:55px;
+          width:65px;
+          height:65px;
           opacity:.7;
-          display: inline-block;
+          -webkit-inline-box
           animation-name: out;
           transition-duration: 1s;
-          border-radius: 180px;
+          border-radius: 60px;
       }
       .floorsContainer {
           padding:0px;
@@ -204,11 +203,13 @@ span:hover, .checkMarkGreen {
          top:60px;
        }
       #calculate_btn, #reset_btn{
-          width: 60px;;
-          height:60px;
+          width: 200px;;
+          height:40px;
           display:block;
+          position: relative;
           margin-top: 7px;
           margin-left: auto;
+          left: 20px;
           margin-right: auto;
         }
   }

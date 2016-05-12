@@ -1,6 +1,6 @@
  $(document).ready(function() {
               var costPsqf= 2.75;
-
+              $('#carpet_Flooring').click();
 
    function calculateCost() {
               var width = $("#w").val();
@@ -36,13 +36,15 @@
               $("#l").on("blur",function() {
               calculateCost();
               });
-$("#carpet_Flooring").click(function(){
+$('#carpet_Flooring').click(function(){
   costPsqf = 2.75;
-  $("#flooringType").text("Carpet");
+  $('#flooringTypeLabel').text("Carpet");
   $('#laminate_Flooring, #hardwood_flooring, #tile_Flooring').removeClass('activeFLR');
-  $(this).addClass('activeFLR');
+  $('#laminate_Flooring, #hardwood_flooring, #tile_Flooring').addClass('floorType');
+  $('#flooringType').addClass('activeFLR');
 
   $('#check_1').addClass('checkMarkGreen');      ///////// GREEN CHECKMARK
+  $('#carpet_Flooring').removeClass('floorType');
   $('#check_2, #check_3, #check_4').removeClass('checkMarkGreen');
 
   $('#Carpet').show(800);          /////// SHOW SPAN PRICING SQF
@@ -52,16 +54,17 @@ $("#carpet_Flooring").click(function(){
   $('#main_container').addClass('carpet_Flooring_wall');
   $('#main_container').removeClass('hardwood_Flooring_wall laminate_Flooring_wall tile_Flooring_wall');
   calculateCost();
-  calculateCost();
 });
 
-$("#laminate_Flooring").click(function(){
+$('#laminate_Flooring').click(function(){
   costPsqf = 2.94;
-  $("#flooringType").text("Laminate");
+  $("#flooringTypeLabel").text("Laminate");
   $('#carpet_Flooring, #hardwood_flooring, #tile_Flooring').removeClass('activeFLR');
-  $(this).addClass('activeFLR');
+  $('#carpet_Flooring, #hardwood_flooring, #tile_Flooring').addClass('floorType');
+  $('#laminate_Flooring').addClass('activeFLR');
 
   $('#check_2').addClass('checkMarkGreen'); ///////// GREEN CHECKMARK
+  $('#laminate_Flooring').removeClass('floorType');
   $('#check_1, #check_3, #check_4').removeClass('checkMarkGreen');
 
   $('#Laminate').show(800);          /////// SHOW SPAN PRICING SQF
@@ -74,13 +77,15 @@ $("#laminate_Flooring").click(function(){
 });
 
 
-$("#hardwood_flooring").click(function(){
+$('#hardwood_flooring').click(function(){
   costPsqf = 3.50;
-  $("#flooringType").text("Hardwood");
+  $('#flooringTypeLabel').text("Hardwood");
   $('#carpet_Flooring, #laminate_Flooring, #tile_Flooring').removeClass('activeFLR');
-  $(this).addClass('activeFLR');
+  $('#carpet_Flooring, #laminate_Flooring, #tile_Flooring').addClass('floorType');
+  $('#hardwood_flooring').addClass('activeFLR');
 
   $('#check_3').addClass('checkMarkGreen'); ///////// GREEN CHECKMARK
+  $('#hardwood_flooring').removeClass('floorType');
   $('#check_1, #check_2, #check_4').removeClass('checkMarkGreen');
 
   $('#Hardwood').show(800);          /////// SHOW SPAN PRICING SQF
@@ -93,13 +98,15 @@ $("#hardwood_flooring").click(function(){
 });
 
 ////////////////////////////////////////  TILE FLOOR //////////////////////////////////
-$("#tile_Flooring").click(function(){
+$('#tile_Flooring').click(function(){
   costPsqf = 3.64;
-  $("#flooringType").text("Tile");
+  $('#flooringTypeLabel').text("Tile");
   $('#carpet_Flooring, #laminate_Flooring, #hardwood_flooring').removeClass('activeFLR');
-  $(this).addClass('activeFLR');
+  $('#carpet_Flooring, #laminate_Flooring, #tile_Flooring').addClass('floorType');
+  $('#tile_Flooring').addClass('activeFLR');
 
   $('#check_4').addClass('checkMarkGreen'); ///////// GREEN CHECKMARK
+  $('#tile_Flooring').removeClass('floorType');
   $('#check_1, #check_2, #check_3').removeClass('checkMarkGreen');
 
   $('#Tile').show(800);          /////// SHOW SPAN PRICING SQF
