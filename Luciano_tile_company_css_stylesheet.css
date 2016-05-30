@@ -57,6 +57,12 @@ span:hover, .checkMarkGreen {
   margin-top:30px;
   text-align:center;
   }
+  #main_container {
+    display:block;
+    height: 900px;
+    transition: 1s;
+  }
+  /* FLOORING TYPES - CIRCULAR */
 #carpet_Flooring {
     background-image: url("assets/carpet_Flooring.jpg");
     }
@@ -69,6 +75,20 @@ span:hover, .checkMarkGreen {
 #tile_Flooring  {
     background-image: url("assets/tile_Flooring.jpg");
 }
+  /* FLOORING TYPES - WALLPAPERS */
+.carpet_Flooring_wall  {
+      background-image: url("assets/carpet_Flooring_wall.jpg");
+  }
+.hardwood_Flooring_wall  {
+      background-image: url("assets/hardwood_Flooring_wall.jpg");
+  }
+.laminate_Flooring_wall  {
+      background-image: url("assets/laminate_Flooring_wall.jpg");
+  }
+.tile_Flooring_wall  {
+      background-image: url("assets/tile_Flooring_wall.jpg");
+  }
+
 .pricePerSQF {
    display: inline;
    font-family: arial, helvetica, monospace;

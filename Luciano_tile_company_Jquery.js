@@ -45,8 +45,13 @@ $("#carpet_Flooring").click(function(){
 
   $('#Carpet').show(1000);          /////// SHOW SPAN PRICING SQF
   $('#Laminate, #Hardwood, #Tile').hide(1000);    /////// HIDE SPAN PRICING SQF
+
+  //////////////// ADD AND REMOVE WALLPAPER WHEN FLOOR TYPE CLICKED ///////////////////
+  $('#main_container').addClass('carpet_Flooring_wall');
+  $('#main_container').removeClass('hardwood_Flooring_wall laminate_Flooring_wall tile_Flooring_wall');
   calculateCost();
-  });
+  calculateCost();
+});
 
 $("#laminate_Flooring").click(function(){
   costPsqf = 2.94;
@@ -59,6 +64,10 @@ $("#laminate_Flooring").click(function(){
 
   $('#Laminate').show(1000);          /////// SHOW SPAN PRICING SQF
   $('#Carpet, #Hardwood, #Tile').hide(1000);    /////// HIDE SPAN PRICING SQF
+
+    //////////////// ADD AND REMOVE WALLPAPER WHEN FLOOR TYPE CLICKED ///////////////////
+  $('#main_container').addClass('hardwood_Flooring_wall');
+  $('#main_container').removeClass('carpet_Flooring_wall hardwood_Flooring_wall laminate_Flooring_wall tile_Flooring_wall');
   calculateCost();
 });
 
@@ -74,6 +83,10 @@ $("#hardwood_flooring").click(function(){
 
   $('#Hardwood').show(1000);          /////// SHOW SPAN PRICING SQF
   $('#Carpet, #Laminate, #Tile').hide(1000);    /////// HIDE SPAN PRICING SQF
+
+    //////////////// ADD AND REMOVE WALLPAPER WHEN FLOOR TYPE CLICKED ///////////////////
+  $('#main_container').addClass('laminate_Flooring_wall');
+  $('#main_container').removeClass('carpet_Flooring_wall hardwood_Flooring_wall laminate_Flooring_wall');
   calculateCost();
 });
 
@@ -89,6 +102,10 @@ $("#tile_Flooring").click(function(){
 
   $('#Tile').show(1000);          /////// SHOW SPAN PRICING SQF
   $('#Carpet, #Laminate, #Hardwood').hide(1000);    /////// HIDE SPAN PRICING SQF
+
+  //////////////// ADD AND REMOVE WALLPAPER WHEN FLOOR TYPE CLICKED ///////////////////
+  $('#main_container').addClass('tile_Flooring_wall');
+  $('#main_container').removeClass('carpet_Flooring_wall carpet_Flooring_wall hardwood_Flooring_wall laminate_Flooring_wall');
   calculateCost();
 });
 
